@@ -40,3 +40,15 @@ int pthread_cmp_func(const void *pthread1, const void *pthread2) {
     // pthread_equal() returns 0 if thread IDs don't match, and non-zero value if they match
     return !pthread_equal(p1, p2);
 }
+
+int binary_cmp_func(const void *bin1, const void *bin2, const size_t len) {
+
+    unsigned char *b1 = (unsigned char *) bin1;
+    unsigned char *b2 = (unsigned char *) bin2;
+
+    for(int i=0; i<len; i++)
+        if(b1[i] != b2[i]) return -1; // if any byte doesn't match
+
+    // if all bytes match
+    return 0;
+}
