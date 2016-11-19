@@ -5,7 +5,7 @@
 #ifndef COLLECTIONS_COMPARER_H
 #define COLLECTIONS_COMPARER_H
 
-#include <ntsid.h>
+#include <stdio.h>
 
 typedef int (*compare_int_func_t)(const int, const int);
 typedef int (*compare_func_t)(const void *, const void *);
