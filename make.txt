@@ -1,4 +1,4 @@
-# Makefile for UNIX 
+﻿# Makefile for UNIX 
 
 # the compiler: gcc for C program, define as g++ for C++ 
 CC = gcc 
@@ -30,4 +30,4 @@ comparer.o: comparer.c comparer.h
 	$(CC) $(CFLAGS) -c comparer.c
 
 clean: 
-	$(RM) $(TARGET) $(LIBRARY) comparer.o
+	$(RM) $(TARGET) $(TARGET).exe $(LIBRARY) comparer.o
