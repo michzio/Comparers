@@ -13,7 +13,7 @@ else()
 endif()
 
 add_library(Comparers_Lib SHARED ${SOURCE_FILES})
-set_target_properties(Comparers_Lib PROPERTIES OUTPUT_NAME comparers_shared)
+set_target_properties(Comparers_Lib PROPERTIES OUTPUT_NAME comparers)
 
 add_library(Comparers_Lib_Static ${SOURCE_FILES})
 set_target_properties(Comparers_Lib_Static PROPERTIES OUTPUT_NAME comparers)

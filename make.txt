@@ -1,4 +1,4 @@
-﻿# Makefile for UNIX 
+# Makefile for UNIX 
 
 # the compiler: gcc for C program, define as g++ for C++ 
 CC = gcc 
@@ -16,18 +16,48 @@ CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 
 # the build target executable:
 TARGET = comparers 
-LIBRARY = libcomparers.a 
+LIBRARY = libcomparers.a  
+SHARED_LIBRARY = libcomparers.so
 
-all: $(TARGET)
+# on macOS build .dylib shared library 
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+        DYNAMIC_LIBRARY= libcomparers.dylib
+else 
+	DYNAMIC_LIBRARY= 
+endif
 
-$(TARGET): main.c $(LIBRARY) 
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY)
+# output directories 
+OUTPUT_DIR = output/debug
+OUTPUT_LIB_DIR = $(OUTPUT_DIR)/lib
+OUTPUT_STATIC_LIB_DIR = $(OUTPUT_LIB_DIR)/static
+OUTPUT_BIN_DIR = $(OUTPUT_DIR)/bin
+
+all: directories libraries $(TARGET)
+
+# make output directories
+directories:
+	@mkdir -p $(OUTPUT_DIR)
+	@mkdir -p $(OUTPUT_LIB_DIR)
+	@mkdir -p $(OUTPUT_STATIC_LIB_DIR)
+	@mkdir -p $(OUTPUT_BIN_DIR)
+
+libraries: $(LIBRARY) $(SHARED_LIBRARY) $(DYNAMIC_LIBRARY)
+
+$(TARGET): $(LIBRARY) 
+	$(CC) $(CFLAGS) -o $(OUTPUT_BIN_DIR)/$(TARGET) main.c $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY)
+
+$(SHARED_LIBRARY): comparer.o
+	$(CC) $(CFLAGS) -shared -o $(OUTPUT_LIB_DIR)/$(SHARED_LIBRARY) $(OUTPUT_DIR)/comparer.o
+
+$(DYNAMIC_LIBRARY): comparer.o
+	$(CC) $(CFLAGS) -dynamiclib -o $(OUTPUT_LIB_DIR)/$(DYNAMIC_LIBRARY) $(OUTPUT_DIR)/comparer.o
 
 $(LIBRARY): comparer.o 
-	$(AR) $(LIBRARY) comparer.o 
+	$(AR) $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OUTPUT_DIR)/comparer.o 
 
 comparer.o: comparer.c comparer.h 
-	$(CC) $(CFLAGS) -c comparer.c
+	$(CC) $(CFLAGS) -c comparer.c -o $(OUTPUT_DIR)/comparer.o
 
 clean: 
-	$(RM) $(TARGET) $(TARGET).exe $(LIBRARY) comparer.o
+	$(RM) -rf $(OUTPUT_DIR)

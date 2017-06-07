@@ -1,0 +1,3 @@
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/output/unix/bin/comparers
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/output/unix/lib/libcomparers.dylib
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/output/unix/lib/static/libcomparers.a
