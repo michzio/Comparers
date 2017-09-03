@@ -56,51 +56,6 @@ CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparer
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -112,15 +67,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-.PHONY : list_install_components/fast
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,32 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Comparers_Lib
-
-# Build rule for target.
-Comparers_Lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Comparers_Lib
-.PHONY : Comparers_Lib
-
-# fast build rule for target.
-Comparers_Lib/fast:
-	$(MAKE) -f CMakeFiles/Comparers_Lib.dir/build.make CMakeFiles/Comparers_Lib.dir/build
-.PHONY : Comparers_Lib/fast
-
-#=============================================================================
-# Target rules for targets named Install_Comparers
-
-# Build rule for target.
-Install_Comparers: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Install_Comparers
-.PHONY : Install_Comparers
-
-# fast build rule for target.
-Install_Comparers/fast:
-	$(MAKE) -f CMakeFiles/Install_Comparers.dir/build.make CMakeFiles/Install_Comparers.dir/build
-.PHONY : Install_Comparers/fast
-
-#=============================================================================
 # Target rules for targets named Comparers
 
 # Build rule for target.
@@ -206,62 +136,75 @@ Comparers_Lib_Static/fast:
 	$(MAKE) -f CMakeFiles/Comparers_Lib_Static.dir/build.make CMakeFiles/Comparers_Lib_Static.dir/build
 .PHONY : Comparers_Lib_Static/fast
 
-comparer.o: comparer.c.o
+#=============================================================================
+# Target rules for targets named Comparers_Lib
 
-.PHONY : comparer.o
+# Build rule for target.
+Comparers_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Comparers_Lib
+.PHONY : Comparers_Lib
 
-# target to build an object file
-comparer.c.o:
-	$(MAKE) -f CMakeFiles/Comparers_Lib.dir/build.make CMakeFiles/Comparers_Lib.dir/comparer.c.o
-	$(MAKE) -f CMakeFiles/Comparers_Lib_Static.dir/build.make CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o
-.PHONY : comparer.c.o
+# fast build rule for target.
+Comparers_Lib/fast:
+	$(MAKE) -f CMakeFiles/Comparers_Lib.dir/build.make CMakeFiles/Comparers_Lib.dir/build
+.PHONY : Comparers_Lib/fast
 
-comparer.i: comparer.c.i
+src/comparer.o: src/comparer.c.o
 
-.PHONY : comparer.i
-
-# target to preprocess a source file
-comparer.c.i:
-	$(MAKE) -f CMakeFiles/Comparers_Lib.dir/build.make CMakeFiles/Comparers_Lib.dir/comparer.c.i
-	$(MAKE) -f CMakeFiles/Comparers_Lib_Static.dir/build.make CMakeFiles/Comparers_Lib_Static.dir/comparer.c.i
-.PHONY : comparer.c.i
-
-comparer.s: comparer.c.s
-
-.PHONY : comparer.s
-
-# target to generate assembly for a file
-comparer.c.s:
-	$(MAKE) -f CMakeFiles/Comparers_Lib.dir/build.make CMakeFiles/Comparers_Lib.dir/comparer.c.s
-	$(MAKE) -f CMakeFiles/Comparers_Lib_Static.dir/build.make CMakeFiles/Comparers_Lib_Static.dir/comparer.c.s
-.PHONY : comparer.c.s
-
-main.o: main.c.o
-
-.PHONY : main.o
+.PHONY : src/comparer.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Comparers.dir/build.make CMakeFiles/Comparers.dir/main.c.o
-.PHONY : main.c.o
+src/comparer.c.o:
+	$(MAKE) -f CMakeFiles/Comparers_Lib_Static.dir/build.make CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o
+	$(MAKE) -f CMakeFiles/Comparers_Lib.dir/build.make CMakeFiles/Comparers_Lib.dir/src/comparer.c.o
+.PHONY : src/comparer.c.o
 
-main.i: main.c.i
+src/comparer.i: src/comparer.c.i
 
-.PHONY : main.i
+.PHONY : src/comparer.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Comparers.dir/build.make CMakeFiles/Comparers.dir/main.c.i
-.PHONY : main.c.i
+src/comparer.c.i:
+	$(MAKE) -f CMakeFiles/Comparers_Lib_Static.dir/build.make CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.i
+	$(MAKE) -f CMakeFiles/Comparers_Lib.dir/build.make CMakeFiles/Comparers_Lib.dir/src/comparer.c.i
+.PHONY : src/comparer.c.i
 
-main.s: main.c.s
+src/comparer.s: src/comparer.c.s
 
-.PHONY : main.s
+.PHONY : src/comparer.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Comparers.dir/build.make CMakeFiles/Comparers.dir/main.c.s
-.PHONY : main.c.s
+src/comparer.c.s:
+	$(MAKE) -f CMakeFiles/Comparers_Lib_Static.dir/build.make CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.s
+	$(MAKE) -f CMakeFiles/Comparers_Lib.dir/build.make CMakeFiles/Comparers_Lib.dir/src/comparer.c.s
+.PHONY : src/comparer.c.s
+
+src/main.o: src/main.c.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/Comparers.dir/build.make CMakeFiles/Comparers.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/Comparers.dir/build.make CMakeFiles/Comparers.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/Comparers.dir/build.make CMakeFiles/Comparers.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 # Help Target
 help:
@@ -269,22 +212,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... install"
-	@echo "... Comparers_Lib"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Install_Comparers"
+	@echo "... edit_cache"
 	@echo "... Comparers"
-	@echo "... list_install_components"
 	@echo "... Comparers_Lib_Static"
-	@echo "... comparer.o"
-	@echo "... comparer.i"
-	@echo "... comparer.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Comparers_Lib"
+	@echo "... src/comparer.o"
+	@echo "... src/comparer.i"
+	@echo "... src/comparer.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

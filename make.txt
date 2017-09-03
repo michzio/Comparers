@@ -27,37 +27,35 @@ else
 	DYNAMIC_LIBRARY= 
 endif
 
-# output directories 
-OUTPUT_DIR = output/debug
-OUTPUT_LIB_DIR = $(OUTPUT_DIR)/lib
-OUTPUT_STATIC_LIB_DIR = $(OUTPUT_LIB_DIR)/static
-OUTPUT_BIN_DIR = $(OUTPUT_DIR)/bin
+# outputs directories
+OUTPUTS_DIR = outputs/debug
+OUTPUTS_LIB_DIR = $(OUTPUTS_DIR)/lib
+OUTPUTS_BIN_DIR = $(OUTPUTS_DIR)/bin
 
 all: directories libraries $(TARGET)
 
-# make output directories
+# make outputs directories
 directories:
-	@mkdir -p $(OUTPUT_DIR)
-	@mkdir -p $(OUTPUT_LIB_DIR)
-	@mkdir -p $(OUTPUT_STATIC_LIB_DIR)
-	@mkdir -p $(OUTPUT_BIN_DIR)
+	@mkdir -p $(OUTPUTS_DIR)
+	@mkdir -p $(OUTPUTS_LIB_DIR)
+	@mkdir -p $(OUTPUTS_BIN_DIR)
 
 libraries: $(LIBRARY) $(SHARED_LIBRARY) $(DYNAMIC_LIBRARY)
 
 $(TARGET): $(LIBRARY) 
-	$(CC) $(CFLAGS) -o $(OUTPUT_BIN_DIR)/$(TARGET) main.c $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY)
+	$(CC) $(CFLAGS) -o $(OUTPUTS_BIN_DIR)/$(TARGET) src/main.c $(OUTPUTS_LIB_DIR)/$(LIBRARY)
 
 $(SHARED_LIBRARY): comparer.o
-	$(CC) $(CFLAGS) -shared -o $(OUTPUT_LIB_DIR)/$(SHARED_LIBRARY) $(OUTPUT_DIR)/comparer.o
+	$(CC) $(CFLAGS) -shared -o $(OUTPUTS_LIB_DIR)/$(SHARED_LIBRARY) $(OUTPUTS_DIR)/comparer.o
 
 $(DYNAMIC_LIBRARY): comparer.o
-	$(CC) $(CFLAGS) -dynamiclib -o $(OUTPUT_LIB_DIR)/$(DYNAMIC_LIBRARY) $(OUTPUT_DIR)/comparer.o
+	$(CC) $(CFLAGS) -dynamiclib -o $(OUTPUTS_LIB_DIR)/$(DYNAMIC_LIBRARY) $(OUTPUTS_DIR)/comparer.o
 
 $(LIBRARY): comparer.o 
-	$(AR) $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OUTPUT_DIR)/comparer.o 
+	$(AR) $(OUTPUTS_LIB_DIR)/$(LIBRARY) $(OUTPUTS_DIR)/comparer.o
 
-comparer.o: comparer.c comparer.h 
-	$(CC) $(CFLAGS) -c comparer.c -o $(OUTPUT_DIR)/comparer.o
+comparer.o: src/comparer.c include/comparer.h
+	$(CC) $(CFLAGS) -c src/comparer.c -o $(OUTPUTS_DIR)/comparer.o
 
 clean: 
-	$(RM) -rf $(OUTPUT_DIR)
+	$(RM) -rf $(OUTPUTS_DIR)

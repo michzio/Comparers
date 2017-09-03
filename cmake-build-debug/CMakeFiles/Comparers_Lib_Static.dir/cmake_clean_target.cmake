@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libcomparers.a"
+  "../outputs/lib/apple/libcomparers.a"
 )

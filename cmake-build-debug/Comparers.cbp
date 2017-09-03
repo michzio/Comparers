@@ -17,73 +17,11 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="install/local">
+			<Target title="rebuild_cache">
 				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="install/strip">
-				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="install">
-				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Comparers_Lib">
-				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/libcomparers.dylib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="3"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Comparers_Lib"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Comparers_Lib/fast">
-				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/libcomparers.dylib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="3"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Comparers_Lib/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -99,33 +37,14 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Install_Comparers">
-				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Install_Comparers"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="Comparers">
-				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/comparers" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/bin/apple/comparers" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/bin/apple"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -141,12 +60,13 @@
 				</MakeCommands>
 			</Target>
 			<Target title="Comparers/fast">
-				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/comparers" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/bin/apple/comparers" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/bin/apple"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -161,23 +81,14 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="list_install_components">
-				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="Comparers_Lib_Static">
-				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/libcomparers.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/lib/apple/libcomparers.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -193,12 +104,13 @@
 				</MakeCommands>
 			</Target>
 			<Target title="Comparers_Lib_Static/fast">
-				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/libcomparers.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/lib/apple/libcomparers.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -213,16 +125,60 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Comparers_Lib">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/lib/apple/libcomparers.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Comparers_Lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Comparers_Lib/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/lib/apple/libcomparers.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Comparers_Lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
-		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.c">
-			<Option target="Comparers_Lib"/>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include/comparer.h">
 			<Option target="Comparers_Lib_Static"/>
-		</Unit>
-		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.h">
 			<Option target="Comparers_Lib"/>
-			<Option target="Comparers_Lib_Static"/>
 		</Unit>
-		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/main.c">
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/comparer.c">
+			<Option target="Comparers_Lib_Static"/>
+			<Option target="Comparers_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/main.c">
 			<Option target="Comparers"/>
 		</Unit>
 		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/CMakeLists.txt">

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.c
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/comparer.c
 string.h
 -
 pthread.h

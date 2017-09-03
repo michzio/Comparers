@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Comparers.dir/main.c.o"
-  "comparers.pdb"
-  "comparers"
+  "CMakeFiles/Comparers.dir/src/main.c.o"
+  "../outputs/bin/apple/comparers.pdb"
+  "../outputs/bin/apple/comparers"
 )
 
 # Per-language clean rules from dependency scanning.

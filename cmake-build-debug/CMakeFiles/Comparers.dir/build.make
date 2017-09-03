@@ -57,50 +57,50 @@ include CMakeFiles/Comparers.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Comparers.dir/flags.make
 
-CMakeFiles/Comparers.dir/main.c.o: CMakeFiles/Comparers.dir/flags.make
-CMakeFiles/Comparers.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Comparers.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Comparers.dir/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/main.c
+CMakeFiles/Comparers.dir/src/main.c.o: CMakeFiles/Comparers.dir/flags.make
+CMakeFiles/Comparers.dir/src/main.c.o: ../src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Comparers.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Comparers.dir/src/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/main.c
 
-CMakeFiles/Comparers.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Comparers.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/main.c > CMakeFiles/Comparers.dir/main.c.i
+CMakeFiles/Comparers.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Comparers.dir/src/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/main.c > CMakeFiles/Comparers.dir/src/main.c.i
 
-CMakeFiles/Comparers.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Comparers.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/main.c -o CMakeFiles/Comparers.dir/main.c.s
+CMakeFiles/Comparers.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Comparers.dir/src/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/main.c -o CMakeFiles/Comparers.dir/src/main.c.s
 
-CMakeFiles/Comparers.dir/main.c.o.requires:
+CMakeFiles/Comparers.dir/src/main.c.o.requires:
 
-.PHONY : CMakeFiles/Comparers.dir/main.c.o.requires
+.PHONY : CMakeFiles/Comparers.dir/src/main.c.o.requires
 
-CMakeFiles/Comparers.dir/main.c.o.provides: CMakeFiles/Comparers.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/Comparers.dir/build.make CMakeFiles/Comparers.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/Comparers.dir/main.c.o.provides
+CMakeFiles/Comparers.dir/src/main.c.o.provides: CMakeFiles/Comparers.dir/src/main.c.o.requires
+	$(MAKE) -f CMakeFiles/Comparers.dir/build.make CMakeFiles/Comparers.dir/src/main.c.o.provides.build
+.PHONY : CMakeFiles/Comparers.dir/src/main.c.o.provides
 
-CMakeFiles/Comparers.dir/main.c.o.provides.build: CMakeFiles/Comparers.dir/main.c.o
+CMakeFiles/Comparers.dir/src/main.c.o.provides.build: CMakeFiles/Comparers.dir/src/main.c.o
 
 
 # Object files for target Comparers
 Comparers_OBJECTS = \
-"CMakeFiles/Comparers.dir/main.c.o"
+"CMakeFiles/Comparers.dir/src/main.c.o"
 
 # External object files for target Comparers
 Comparers_EXTERNAL_OBJECTS =
 
-comparers: CMakeFiles/Comparers.dir/main.c.o
-comparers: CMakeFiles/Comparers.dir/build.make
-comparers: libcomparers.a
-comparers: CMakeFiles/Comparers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable comparers"
+../outputs/bin/apple/comparers: CMakeFiles/Comparers.dir/src/main.c.o
+../outputs/bin/apple/comparers: CMakeFiles/Comparers.dir/build.make
+../outputs/bin/apple/comparers: ../outputs/lib/apple/libcomparers.dylib
+../outputs/bin/apple/comparers: CMakeFiles/Comparers.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../outputs/bin/apple/comparers"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Comparers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Comparers.dir/build: comparers
+CMakeFiles/Comparers.dir/build: ../outputs/bin/apple/comparers
 
 .PHONY : CMakeFiles/Comparers.dir/build
 
-CMakeFiles/Comparers.dir/requires: CMakeFiles/Comparers.dir/main.c.o.requires
+CMakeFiles/Comparers.dir/requires: CMakeFiles/Comparers.dir/src/main.c.o.requires
 
 .PHONY : CMakeFiles/Comparers.dir/requires
 

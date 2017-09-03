@@ -48,8 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Comparers_Lib.dir/DependInfo.cmake"
-  "CMakeFiles/Install_Comparers.dir/DependInfo.cmake"
   "CMakeFiles/Comparers.dir/DependInfo.cmake"
   "CMakeFiles/Comparers_Lib_Static.dir/DependInfo.cmake"
+  "CMakeFiles/Comparers_Lib.dir/DependInfo.cmake"
   )

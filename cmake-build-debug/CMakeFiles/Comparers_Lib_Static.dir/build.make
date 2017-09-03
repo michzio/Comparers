@@ -57,50 +57,50 @@ include CMakeFiles/Comparers_Lib_Static.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Comparers_Lib_Static.dir/flags.make
 
-CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o: CMakeFiles/Comparers_Lib_Static.dir/flags.make
-CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o: ../comparer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.c
+CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o: CMakeFiles/Comparers_Lib_Static.dir/flags.make
+CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o: ../src/comparer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/comparer.c
 
-CMakeFiles/Comparers_Lib_Static.dir/comparer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Comparers_Lib_Static.dir/comparer.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.c > CMakeFiles/Comparers_Lib_Static.dir/comparer.c.i
+CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/comparer.c > CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.i
 
-CMakeFiles/Comparers_Lib_Static.dir/comparer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Comparers_Lib_Static.dir/comparer.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.c -o CMakeFiles/Comparers_Lib_Static.dir/comparer.c.s
+CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/comparer.c -o CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.s
 
-CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o.requires:
+CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o.requires:
 
-.PHONY : CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o.requires
+.PHONY : CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o.requires
 
-CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o.provides: CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o.requires
-	$(MAKE) -f CMakeFiles/Comparers_Lib_Static.dir/build.make CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o.provides.build
-.PHONY : CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o.provides
+CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o.provides: CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o.requires
+	$(MAKE) -f CMakeFiles/Comparers_Lib_Static.dir/build.make CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o.provides.build
+.PHONY : CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o.provides
 
-CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o.provides.build: CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o
+CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o.provides.build: CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o
 
 
 # Object files for target Comparers_Lib_Static
 Comparers_Lib_Static_OBJECTS = \
-"CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o"
+"CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o"
 
 # External object files for target Comparers_Lib_Static
 Comparers_Lib_Static_EXTERNAL_OBJECTS =
 
-libcomparers.a: CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o
-libcomparers.a: CMakeFiles/Comparers_Lib_Static.dir/build.make
-libcomparers.a: CMakeFiles/Comparers_Lib_Static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libcomparers.a"
+../outputs/lib/apple/libcomparers.a: CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o
+../outputs/lib/apple/libcomparers.a: CMakeFiles/Comparers_Lib_Static.dir/build.make
+../outputs/lib/apple/libcomparers.a: CMakeFiles/Comparers_Lib_Static.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../outputs/lib/apple/libcomparers.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Comparers_Lib_Static.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Comparers_Lib_Static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Comparers_Lib_Static.dir/build: libcomparers.a
+CMakeFiles/Comparers_Lib_Static.dir/build: ../outputs/lib/apple/libcomparers.a
 
 .PHONY : CMakeFiles/Comparers_Lib_Static.dir/build
 
-CMakeFiles/Comparers_Lib_Static.dir/requires: CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o.requires
+CMakeFiles/Comparers_Lib_Static.dir/requires: CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o.requires
 
 .PHONY : CMakeFiles/Comparers_Lib_Static.dir/requires
 

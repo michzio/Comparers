@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.c" "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/CMakeFiles/Comparers_Lib_Static.dir/comparer.c.o"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/comparer.c" "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/cmake-build-debug/CMakeFiles/Comparers_Lib_Static.dir/src/comparer.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
   )
 
 # Targets to which this target links.
